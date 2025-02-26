@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             const activeTab = tabs[0];
 
-            fetch('http://localhost:5000/detect-language', {
+            fetch('https://afternoon-coast-99166-a615ff05647b.herokuapp.com/detect-language', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ url: activeTab.url, target_language: targetLanguage }) // Send input
