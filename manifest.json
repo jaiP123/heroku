@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Language Detector",
+    "author": "Jaihind Patil",
+    "version": "3.0",
+    "description": "Detects the presence of a specific language on a webpage. Enter a language code (e.g., en, ar, es) to check for its presence and word count.", 
+    "permissions": ["activeTab", "scripting", "storage",
+    "tabs"],
+    "host_permissions": [ "http://*/*",
+    "https://*/*"],
+    "action": {
+      "default_popup": "pop_up.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+  
